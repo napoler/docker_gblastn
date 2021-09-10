@@ -1,7 +1,9 @@
 # blast-gpu-10-1
 
 cuda10.1 
-
+```
+docker pull napoler/docker_gpu_bast:10.1
+```
 
 
 
