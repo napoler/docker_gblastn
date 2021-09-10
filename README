@@ -1,8 +1,11 @@
 # blast-gpu-10-1
 
 cuda10.1 
+
+#一键安装
+
 ```
-docker pull napoler/docker_gpu_bast:10.1
+docker run --name blast_项目名称 -it napoler/docker_gpu_bast:10.1 bash
 ```
 
 
