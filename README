@@ -1,3 +1,25 @@
+# blast-gpu-10-1
+
+cuda10.1 
+
+
+
+
+
+
+# æµ‹è¯•ä¸ä¿å­˜
+docker run --rm -it blast-gpu-10-1:latest bash
+# é•¿æœŸä½¿ç”¨
+ docker run --name blast_é¡¹ç›®åç§° -it blast-gpu-10-1:latest bash
+
+# ç¨‹åºç›®å½•
+
+/ncbi-blast-2.2.28+-src/c++/GCC485-ReleaseMT64/bin/blastp
+
+
+
+
+
 ************************ GPU-BLAST 1.1 [February 2016] ************************
 GPU-BLAST is designed to accelerate the gapped and ungapped protein sequence
 alignment algorithms of the NCBI-BLAST implementation. GPU-BLAST is integrated
@@ -51,7 +73,7 @@ If you have already installed NCBI-BLAST, go to step 2.
 
 [ploskas@anaximander blast]$ wget ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.2.28/ncbi-blast-2.2.28+-src.tar.gz
 --2016-02-09 13:13:32--  ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.2.28/ncbi-blast-2.2.28+-src.tar.gz
-           => ‘ncbi-blast-2.2.28+-src.tar.gz’
+           => ï¿½ncbi-blast-2.2.28+-src.tar.gzï¿½
 Resolving ftp.ncbi.nlm.nih.gov (ftp.ncbi.nlm.nih.gov)... 130.14.250.7, 2607:f220:41e:250::10
 Connecting to ftp.ncbi.nlm.nih.gov (ftp.ncbi.nlm.nih.gov)|130.14.250.7|:21... connected.
 Logging in as anonymous ... Logged in!
@@ -63,7 +85,7 @@ Length: 13468751 (13M) (unauthoritative)
 
 100%[====================================================================================>] 13,468,751  3.89MB/s   in 3.3s
 
-2016-02-09 13:13:36 (3.89 MB/s) - ‘ncbi-blast-2.2.28+-src.tar.gz’ saved [13468751]
+2016-02-09 13:13:36 (3.89 MB/s) - ï¿½ncbi-blast-2.2.28+-src.tar.gzï¿½ saved [13468751]
 
 [ploskas@anaximander blast]$ ls
 ncbi-blast-2.2.28+-src.tar.gz
@@ -97,11 +119,11 @@ Resolving thales.cheme.cmu.edu (thales.cheme.cmu.edu)... 128.2.55.81
 Connecting to thales.cheme.cmu.edu (thales.cheme.cmu.edu)|128.2.55.81|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 252460 (247K) [application/x-gzip]
-Saving to: ‘gpu-blast-1.1_ncbi-blast-2.2.28.tar.gz’
+Saving to: ï¿½gpu-blast-1.1_ncbi-blast-2.2.28.tar.gzï¿½
 
 100%[====================================================================================>] 252,460     --.-K/s   in 0.02s
 
-2016-02-09 13:56:41 (11.5 MB/s) - ‘gpu-blast-1.1_ncbi-blast-2.2.28.tar.gz’ saved [252460/252460]
+2016-02-09 13:56:41 (11.5 MB/s) - ï¿½gpu-blast-1.1_ncbi-blast-2.2.28.tar.gzï¿½ saved [252460/252460]
 
 [ploskas@anaximander blast]$ ls
 gpu-blast-1.1_ncbi-blast-2.2.28.tar.gz  ncbi-blast-2.2.28+-src
@@ -137,11 +159,11 @@ Resolving thales.cheme.cmu.edu (thales.cheme.cmu.edu)... 128.2.55.81
 Connecting to thales.cheme.cmu.edu (thales.cheme.cmu.edu)|128.2.55.81|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 252460 (247K) [application/x-gzip]
-Saving to: ‘gpu-blast-1.1_ncbi-blast-2.2.28.tar.gz’
+Saving to: ï¿½gpu-blast-1.1_ncbi-blast-2.2.28.tar.gzï¿½
 
 100%[====================================================================================>] 252,460     --.-K/s   in 0.02s
 
-2016-02-09 15:15:34 (11.8 MB/s) - ‘gpu-blast-1.1_ncbi-blast-2.2.28.tar.gz’ saved [252460/252460]
+2016-02-09 15:15:34 (11.8 MB/s) - ï¿½gpu-blast-1.1_ncbi-blast-2.2.28.tar.gzï¿½ saved [252460/252460]
 
 [ploskas@anaximander blast]$ ls
 gpu-blast-1.1_ncbi-blast-2.2.28.tar.gz
@@ -159,7 +181,7 @@ no
 Continuing with the downloading of ncbi-blast-2.2.28+-src...
 Downloading NBCI BLAST
 --2016-02-09 15:29:18--  ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.2.28/ncbi-blast-2.2.28+-src.tar.gz
-           => ‘ncbi-blast-2.2.28+-src.tar.gz’
+           => ï¿½ncbi-blast-2.2.28+-src.tar.gzï¿½
 Resolving ftp.ncbi.nlm.nih.gov (ftp.ncbi.nlm.nih.gov)... 130.14.250.11, 2607:f220:41e:250::7
 Connecting to ftp.ncbi.nlm.nih.gov (ftp.ncbi.nlm.nih.gov)|130.14.250.11|:21... connected.
 Logging in as anonymous ... Logged in!
@@ -171,7 +193,7 @@ Length: 13468751 (13M) (unauthoritative)
 
 100%[====================================================================================>] 13,468,751  8.39MB/s   in 1.5s
 
-2016-02-09 15:29:20 (8.39 MB/s) - ‘ncbi-blast-2.2.28+-src.tar.gz’ saved [13468751]
+2016-02-09 15:29:20 (8.39 MB/s) - ï¿½ncbi-blast-2.2.28+-src.tar.gzï¿½ saved [13468751]
 
 
 Extracting NCBI BLAST
